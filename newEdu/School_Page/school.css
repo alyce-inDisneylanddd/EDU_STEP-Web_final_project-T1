@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+body {
+    width: 100%;
+    font-family: "Quicksand";
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* navigation */
+nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    /* border-bottom: 1px solid black; */
+}
+
+/* search bar */
+input {
+    font-family: "Quicksand";
+}
+.box {
+    height: 36px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.box:hover input {
+    width: 350px;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.box img {
+    width: 20px;
+}
+
+.menu_bar  {
+    display: none;
+}
+
+.logo p{
+    font-family: koho;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+li a:hover {
+    opacity: 50%;
+}
+
+.home_page a {
+    color: #133E87;
+    text-decoration: underline;
+}
+
+.logo, .right_nav, .link_page {
+    display: flex;
+    align-items: center;   
+}
+.logo, .right_nav{
+    gap: 15px;
+}
+
+.logo p {
+    font-family: "Koho";
+    font-size: 25px;
+}
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+li a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.right_nav img {
+    width: 20px;
+    transform: rotate(180);
+}
+
+button {
+    width: 90px;
+    height: 36px;
+    border-radius: 10px;
+    font-family: "Quicksand";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#sign_up {
+    background-color: white;
+    border: 2px solid #133E87;
+    color: #133E87;
+}
+
+#login {
+    background-color: #133E87;
+    border: 2px solid #133E87;
+    color: white;
+}
+
+
+/* main */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* title  */
+.scholarship_title {
+    padding-top: 7em;
+}
+
+.container_scholarship {
+    height: 402px;
+    width: 100%;
+    background: rgba(192, 192, 192, 0.10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em;
+    padding-right: 13em;
+}
+
+.left_side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.left_side p {
+    font-weight: 600;
+    color: rgba(96, 96, 96, 0.7);
+    line-height: 1.5;
+}
+
+.left_side h1 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #133E87;
+}
+
+.right_side img {
+    width: auto;
+    height: 312px;
+}
+
+/* overview */
+.overview, .top_uni, .all_uni {
+    padding-left: 3em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.overview h2, .top_uni h2, .all_uni h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #133E87;
+}
+
+.overview p {
+    width: 75%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgba(64, 64, 64, 0.8);
+}
+
+.overview span {
+    color: #9B1B30;
+    font-weight: 700;
+}
+
+/* top universities */
+.top_uni span, .all_uni span {
+    color: #9B1B30;
+}
+
+
+/* uni info */
+.uni_display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.container {
+    display: flex;  
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container h2 {
+    color: #404040;
+}
+
+.popular_uni {
+    display: flex;
+    justify-content: center;
+    width: 257px;
+    height: 308px;
+    border-radius: 30px;
+    border: 1px solid #C0C0C0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8em;
+}
+
+.major_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7em;
+}
+
+.uni_img {
+    width: 229px;
+    height: auto;
+    border: 1px solid #c0c0c0;
+    border-radius: 15px;
+}
+
+.major_container h3 {
+    width: 100%;
+    font-size: 24px;
+    color: #606060;
+    padding-top: 0.7em;
+    padding-bottom: 0.2em;
+}
+
+.major_container p {
+    width: 100%;
+    font-size: 11px;
+    color: #A0A0A0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.button_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin-top: 0.8em;
+    gap: 0.3em;
+}
+.button_container button {
+    font-size: 12px;
+}
+.heart {
+    width: 30px;
+    height: auto;
+}
+
+#school {
+    border: 2px solid #133E87;
+    color: white;
+    background-color: #133E87;
+    font-weight: 600;
+    margin-right: 0.4em;
+}
+
+/* all universities */
+.all_uni {
+    margin-top: 8em;
+}
+
+.all_uni_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3em;
+}
+
+.all_uni_title a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #133E87;
+}
+
+.all_uni_title a:hover {
+    opacity: 70%;
+}
+
+
+/* footer */
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(192, 192, 192, 0.2);
+    margin-top: 11em;
+    padding-left: 7em;
+    padding-right: 10em;
+}
+
+
+.left_footer .logo, .find_us h3 {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.left_footer, .right_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.detail {
+    height: 145px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.description_footer {
+    font-size: 12px;
+    color: #A0A0A0;
+    font-weight: 600;
+    width: 515px;
+    height: 90px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.SM {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+#fb, #telegram {
+    width: 32px;
+    height: auto;
+}
+
+#ig {
+    width: 36px;
+    height: auto;
+}
+
+
+.gmail, .location, .call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.right_footer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #133E87;
+}
+.location img {
+    width: 20px;
+    height: auto;
+}
+
+.gmail img {
+    width: 18px;
+    height: auto;
+}
+
+.call img {
+    width: 17px;
+    height: auto;
+}
+
+.call {
+    margin-bottom: 1em;
+}
+.gmail p, .location p, .call p {
+    font-size: 14px;
+    width: 420px;
+    font-weight: 600;
+    color: #A0A0A0;
+    line-height: 2;
+}
+
+
