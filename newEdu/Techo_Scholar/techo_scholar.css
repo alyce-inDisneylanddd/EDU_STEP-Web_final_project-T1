@@ -154,7 +154,7 @@ header {
     display: flex;
     flex-grow: 2;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
 }
 header p {
     color: #606060;
