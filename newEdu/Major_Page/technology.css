@@ -307,6 +307,8 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
     margin-top: 0.8em;
     gap: 0.3em;
 }
@@ -320,17 +322,9 @@ main {
 
 #explore_now {
     border: 2px solid #133E87;
-    color: #133E87;
-    background-color: white;
-    font-weight: 600;
-}
-
-#school {
-    border: 2px solid #133E87;
     color: white;
     background-color: #133E87;
     font-weight: 600;
-    margin-right: 0.4em;
 }
 
 
