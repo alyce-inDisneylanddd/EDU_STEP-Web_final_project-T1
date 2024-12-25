@@ -190,7 +190,10 @@ main {
 .majors_nav img {
     width: 22px;
     height: auto;
+
 }
+
+
 
 
 
@@ -303,6 +306,8 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
     margin-top: 0.8em;
     gap: 0.3em;
 }
@@ -316,18 +321,11 @@ main {
 
 #explore_now {
     border: 2px solid #133E87;
-    color: #133E87;
-    background-color: white;
-    font-weight: 600;
-}
-
-#school {
-    border: 2px solid #133E87;
     color: white;
     background-color: #133E87;
     font-weight: 600;
-    margin-right: 0.4em;
 }
+
 
 
 
@@ -442,4 +440,69 @@ main {
     color: #A0A0A0;
     line-height: 2;
 }
+
+
+
+
+
+
+.menu_bar {
+    display: flex;
+}
+    /* menu bar */
+/* Style for the container */
+/* .menu_bar {
+    position: relative;
+    display: inline-block;
+} */
+  
+    /* Style for the dropdown box */
+/* .dropdown-box {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: -135px;
+    top: 22px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 170px;
+    border-radius: 15px;
+    
+} */
+  
+/* Show the dropdown box on hover */
+/* .menu_bar:hover .dropdown-box {
+    display: block;
+    background-color: #133E87;
+} */
+  
+/* Style for the image */
+/* .menu_bar img {
+    display: block;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+} */
+
+  
+/* Style for dropdown items */
+/* .dropdown-box a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    
+}
+  
+.dropdown-box a:hover {
+    color: white;
+    background-color: #608bc1;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    
+} */
+
 

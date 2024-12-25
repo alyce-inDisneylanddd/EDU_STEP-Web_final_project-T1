@@ -3,16 +3,21 @@
     padding: 0;
     margin: 0;
 }
-button:hover {
-    cursor: pointer;
-    opacity: 70%;
-}
 body {
     width: 100%;
     font-family: "Quicksand";
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
 
+.home_page a {
+    color: #133E87;
+    text-decoration: underline;
 }
 
 /* navigation */
@@ -77,7 +82,7 @@ li a:hover {
     opacity: 50%;
 }
 
-.home_page a {
+.techo a {
     color: #133E87;
     text-decoration: underline;
 }
@@ -115,7 +120,6 @@ li a {
 
 .right_nav img {
     width: 20px;
-    transform: rotate(180);
 }
 
 button {
@@ -140,50 +144,365 @@ button {
 }
 
 
-
-/* main */
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
-
-/* title  */
-.scholarship_title {
-    padding-top: 7em;
-}
-
-.container_scholarship {
-    height: 402px;
-    width: 100%;
-    background: rgba(192, 192, 192, 0.10);
+/* css body */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5em;
-    padding-right: 13em;
+    margin-top: 7em;
+    padding-left: 5em;
+    padding-right:10em;
+    width: 100%;
+    height: 275px;
+    background: rgba(192, 192, 192, 0.10);
+    
+}
+.name {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    gap: 1.2em;
+}
+.name p {
+    color: #606060;
+    font-size: 20px;
+    font-weight: 700;
+}
+.name h1 {
+    font-size: 50px;
+    color: #9B1B30;
+
+}
+.name .cadt_full {
+    font-size: 30px;
+    color: #133E87;
+}
+.pic_logo img {
+    width: 230px;
+    height: auto;
+}
+ 
+.overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    padding-left: 4em;
+    margin-top: 5em;
+}
+.color_h2 {
+    color: #133E87;
+    font-size: 32px;
+    font-weight: 600;
+}
+.overview p {
+    color: #606060;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.overview span {
+    color: #9B1B30;
 }
 
-.left_side {
+.button {
+    width: 143px;
+    height: 53px;
+    border-radius: 10px;
+    background: #133E87;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #133E87;
+}
+
+
+
+/* majors  */
+.all_popular_major {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.popular {
+    padding: 4em;
+    padding-top: 0;
+    margin-top: 8em;
+}
+
+.container {
+    display: flex;  
+    flex-direction: column;
+    gap: 3em;
+}
+
+.container h2 {
+    color: #133E87;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.popular_major {
+    display: flex;
+    justify-content: center;
+    width: 257px;
+    height: 308px;
+    border-radius: 30px;
+    border: 1px solid #C0C0C0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8em;
+}
+
+.major_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7em;
+}
+
+.major_img {
+    width: 230px;
+    height: auto;
+    border: 1px solid #c0c0c0;
+    border-radius: 15px;
+}
+
+
+
+.major_container h3 {
+    width: 100%;
+    font-size: 24px;
+    color: #606060;
+}
+
+.major_container p {
+    width: 100%;
+    font-size: 11px;
+    color: #A0A0A0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.button_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin-top: 0.8em;
+    gap: 0.3em;
+}
+.button_container button {
+    font-size: 12px;
+}
+.heart {
+    width: 30px;
+    height: auto;
+}
+
+.button_cadt {
+    border: 2px solid #133E87;
+    color: white;
+    background-color: #133E87;
+    font-weight: 600;
+    width: 143px;
+    height: 53px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* find us and stay conneted*/
+.school_findus h2, .stayConnected h2 {
+    font-size: 32px;
+    color: #133E87;
+    font-weight: 600;
+}
+.stayConnected span {
+    color: #9B1B30;
+}
+.button_container button {
+    border: 2px solid #133E87;
+    color: white;
+    background-color: #133E87;
+    font-weight: 600;
+    margin-right: 0.4em;
+}
+.school_findus, .stayConnected {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-left: 4em;
+    margin-top: 4em;
+}
+.stayConnected {
+    margin-top: 6em;
+}
+
+.findUs_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+}
+
+.stayConnected_container {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
-.left_side p {
+.school_location, .school_call, .school_gmail, .sm_container {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.school_findus p, .stayConnected p {
     font-weight: 600;
-    color: rgba(96, 96, 96, 0.7);
-    line-height: 1.5;
+    font-size: 18px;
+    color: #606060;
 }
 
-.left_side h1 {
-    font-size: 55px;
+.school_location button, .school_gmail button, .school_call button {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.school_location img {
+    width: 32px;
+    height: auto;
+}
+
+.school_gmail img {
+    width: 26px;
+    height: auto;
+}
+
+.school_call img {
+    width: 25px;
+    height: auto;
+}
+
+#stayConnected_fb {
+    width: 43px;
+    height: auto;
+}
+#stayConnected_ig {
+    width: 47px;
+    height: auto;
+}
+
+#stayConnected_telegram {
+    width: 42px;
+    height: auto;
+}
+
+
+
+/* footer */
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(192, 192, 192, 0.2);
+    margin-top: 7.5em;
+    padding-left: 7em;
+    padding-right: 10em;
+}
+
+
+.left_footer .logo, .find_us h3 {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.left_footer, .right_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.detail {
+    height: 145px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.description_footer {
+    font-size: 12px;
+    color: #A0A0A0;
+    font-weight: 600;
+    width: 515px;
+    height: 90px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.SM {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+#fb, #telegram {
+    width: 32px;
+    height: auto;
+}
+
+#ig {
+    width: 36px;
+    height: auto;
+}
+
+
+.gmail, .location, .call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.right_footer h3 {
+    font-size: 22px;
     font-weight: 600;
     color: #133E87;
 }
+.location img {
+    width: 20px;
+    height: auto;
+}
 
-.right_side img {
-    width: auto;
-    height: 312px;
+.gmail img {
+    width: 18px;
+    height: auto;
+}
+
+.call img {
+    width: 17px;
+    height: auto;
+}
+
+.call {
+    margin-bottom: 1em;
+}
+.gmail p, .location p, .call p {
+    font-size: 14px;
+    width: 420px;
+    font-weight: 600;
+    color: #A0A0A0;
+    line-height: 2;
+}
+
+.button_cadt:hover {
+    opacity: 60%;
 }
