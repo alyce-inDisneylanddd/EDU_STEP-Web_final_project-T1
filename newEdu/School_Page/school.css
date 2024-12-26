@@ -224,7 +224,11 @@ main {
 /* uni info */
 .uni_display {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 280px);
+}
+.all_uni .uni_display{
+    grid-template-columns: repeat(5, 280px);
+    grid-template-rows: repeat(2, 350px);
 }
 .container {
     display: flex;  
@@ -431,6 +435,25 @@ main {
 
 
 /* responsive for navigation and footer */
+@media (max-width:1400px) {
+    .uni_display {
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(1, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(1, 350px);
+    }
+    .all_uni_title h2, .top_uni h2{
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 1200px) {
 
     /* navigation */
@@ -545,8 +568,87 @@ main {
      .location p, .gmail p, .call p {
          width: 100%;
      }
+
+      /* body */
+    .container_scholarship {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 2em;
+        padding: 0;
+        height: 700px;
+    }
+    .right_side img {
+        width: auto;
+        height: 270px;
+        margin: 0;
+        padding: 0;
+  
+    }
+    .left_side h1 {
+        font-size: 40px;
+        
+    }
+    .left_side {
+        padding-left: 3em;
+    }
+    .overview p {
+        line-height: 1.6;
+    }
+    .uni_display {
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(1, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 350px);
+    }
+    .all_uni_title h2, .top_uni h2{
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 16px;
+    }
+}
+@media (max-width:1190px) {
+    .uni_display {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(1, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(2, 350px);
+    }
+    .all_uni_title h2, .top_uni h2{
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 16px;
+    }
 }
 
+@media (max-width:1000px) {
+    .uni_display {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(1, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(2, 350px);
+    }
+    .all_uni_title h2, .top_uni h2{
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 768px) {
     body {
@@ -695,4 +797,47 @@ main {
     .overview p {
         line-height: 1.6;
     }
+    .uni_display {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: repeat(2, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-rows: repeat(3, 350px);
+    }
+    .all_uni_title h2, .top_uni h2{
+        width: 80%;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:700px) and (min-width:50px) {
+    .box:hover input {
+        width: 80px;
+    }
+    .uni_display {
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(3, 350px);
+    }
+    .all_uni .uni_display{
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(4, 350px);
+    }
+
+    .all_uni_title h2, .top_uni h2{
+        width: 75%;
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .all_uni_title a {
+        font-size: 14px;
+    }
+
+    .all_uni {
+        margin-top: 2em;
+    }
+
 }

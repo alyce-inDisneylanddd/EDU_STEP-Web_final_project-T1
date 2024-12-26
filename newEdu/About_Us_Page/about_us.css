@@ -529,3 +529,8 @@ main {
     
     
 }
+@media (max-width:700px) and (min-width:50px) {
+    .box:hover input {
+        width: 80px;
+    }
+}
