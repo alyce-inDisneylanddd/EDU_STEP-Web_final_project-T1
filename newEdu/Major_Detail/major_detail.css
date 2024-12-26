@@ -138,7 +138,10 @@ button {
 
 
 /* css body */
-
+main {
+    display: flex;
+    flex-direction: column;
+}
 .header {
     display: flex;
     flex-direction: row-reverse;
@@ -160,7 +163,7 @@ button {
 
 .image img {
     width: 640px;
-    height: 354px;
+    height: auto;
     padding-top: 25px;
     padding-left: 6rem;
 }
@@ -427,9 +430,35 @@ button:hover {
      .location p, .gmail p, .call p {
          width: 100%;
      }
+         /* body */
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        justify-content: center;
+
+    }
+    .image img {
+        width: 550px;
+        padding: 0;
+        padding-top: 4em;
+    }
+    .main p {
+        line-height: 1.5;
+    }
+    .description h1 {
+        font-size: 40px;
+    }
+    .description p {
+        width: 80%;
+        line-height: 1.6;
+    }
     
 }
 @media (max-width: 768px) {
+    body {
+        overflow-x: none;
+    }
 
     /* navigation */
     .box:hover input {
@@ -545,5 +574,35 @@ button:hover {
 
     .location p, .gmail p, .call p {
         width: 100%;
+    }
+
+
+    /* body */
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+        justify-content: center;
+
+    }
+    .image img {
+        width: 400px;
+        padding: 0;
+        padding-top: 4em;
+    }
+    .main p {
+        line-height: 1.5;
+    }
+    .description h1 {
+        font-size: 40px;
+    }
+    .description p {
+        width: 80%;
+        line-height: 1.6;
+    }
+}
+@media (max-width:700px) and (min-width:50px) {
+    .box:hover input {
+        width: 80px;
     }
 }
