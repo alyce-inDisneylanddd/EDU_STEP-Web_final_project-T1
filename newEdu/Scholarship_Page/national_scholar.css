@@ -148,7 +148,7 @@ button {
 .background_img {
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: overlay; 
-    background-image: url('../assests/scholar/pexels-pixabay-267885.jpg');
+    background-image: url('..//EDU_STEP-Web_final_project-T1/assets/scholar/pexels-pixabay-267885.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
