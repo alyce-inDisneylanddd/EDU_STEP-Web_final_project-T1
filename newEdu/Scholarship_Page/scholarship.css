@@ -161,7 +161,7 @@ main {
 .background_img {
     background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: overlay; 
-    background-image: url('../assests/scholar/5853 copy.jpg');
+    background-image: url('..//EDU_STEP-Web_final_project-T1/assets/scholar/5853 copy.jpg');
     background-size: cover;
     background-position: center;
     width: 80%;
